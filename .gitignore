@@ -1,0 +1,36 @@
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+.pnpm-store/
+
+# CDK
+infra/cdk.out/
+cdk.context.json
+
+# Python
+worker/.venv/
+eval/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# OMC operational state (keep specs/plans/skills)
+.omc/state/
+.omc/logs/
+.omc/artifacts/
+.omc/handoffs/
