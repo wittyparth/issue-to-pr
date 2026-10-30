@@ -1,0 +1,112 @@
+{
+  "issues": [
+    {
+      "id": "py-easy-01",
+      "repo": "it2pr-eval/fixture-python-cli",
+      "commit_sha": "a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3",
+      "issue_number": 101,
+      "difficulty": "easy",
+      "language": "python",
+      "expected_outcome": "fix off-by-one in pagination helper; tests pass, coverage unchanged"
+    },
+    {
+      "id": "py-easy-02",
+      "repo": "it2pr-eval/fixture-python-cli",
+      "commit_sha": "a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3",
+      "issue_number": 102,
+      "difficulty": "easy",
+      "language": "python",
+      "expected_outcome": "add missing null check in CLI arg parser; new unit test added"
+    },
+    {
+      "id": "py-med-01",
+      "repo": "it2pr-eval/fixture-python-cli",
+      "commit_sha": "a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3",
+      "issue_number": 103,
+      "difficulty": "med",
+      "language": "python",
+      "expected_outcome": "refactor retry decorator to support backoff cap; existing tests still pass"
+    },
+    {
+      "id": "py-med-02",
+      "repo": "it2pr-eval/fixture-python-cli",
+      "commit_sha": "a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3",
+      "issue_number": 104,
+      "difficulty": "med",
+      "language": "python",
+      "expected_outcome": "fix race condition in cache invalidation; regression test added"
+    },
+    {
+      "id": "py-hard-01",
+      "repo": "it2pr-eval/fixture-python-cli",
+      "commit_sha": "a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3",
+      "issue_number": 105,
+      "difficulty": "hard",
+      "language": "python",
+      "expected_outcome": "rewrite config loader to support layered overrides without breaking back-compat"
+    },
+    {
+      "id": "py-hard-02",
+      "repo": "it2pr-eval/fixture-python-cli",
+      "commit_sha": "a1b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3",
+      "issue_number": 106,
+      "difficulty": "hard",
+      "language": "python",
+      "expected_outcome": "diagnose and fix intermittent coverage-tool crash on empty test dirs"
+    },
+    {
+      "id": "node-easy-01",
+      "repo": "it2pr-eval/fixture-node-api",
+      "commit_sha": "b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4",
+      "issue_number": 201,
+      "difficulty": "easy",
+      "language": "node",
+      "expected_outcome": "fix incorrect status code on validation error route"
+    },
+    {
+      "id": "node-easy-02",
+      "repo": "it2pr-eval/fixture-node-api",
+      "commit_sha": "b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4",
+      "issue_number": 202,
+      "difficulty": "easy",
+      "language": "node",
+      "expected_outcome": "add missing await on async middleware; existing tests pass"
+    },
+    {
+      "id": "node-med-01",
+      "repo": "it2pr-eval/fixture-node-api",
+      "commit_sha": "b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4",
+      "issue_number": 203,
+      "difficulty": "med",
+      "language": "node",
+      "expected_outcome": "fix pagination cursor encoding bug; new integration test added"
+    },
+    {
+      "id": "node-med-02",
+      "repo": "it2pr-eval/fixture-node-api",
+      "commit_sha": "b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4",
+      "issue_number": 204,
+      "difficulty": "med",
+      "language": "node",
+      "expected_outcome": "resolve TypeScript type error surfaced by strict null checks"
+    },
+    {
+      "id": "node-hard-01",
+      "repo": "it2pr-eval/fixture-node-api",
+      "commit_sha": "b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4",
+      "issue_number": 205,
+      "difficulty": "hard",
+      "language": "node",
+      "expected_outcome": "fix memory leak from unclosed event listeners under load"
+    },
+    {
+      "id": "node-hard-02",
+      "repo": "it2pr-eval/fixture-node-api",
+      "commit_sha": "b2c3d4e5f60718293a4b5c6d7e8f9a0b1c2d3e4",
+      "issue_number": 206,
+      "difficulty": "hard",
+      "language": "node",
+      "expected_outcome": "migrate a route handler to async generator streaming without regressing coverage"
+    }
+  ]
+}
