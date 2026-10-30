@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  js:
+    name: TypeScript (app + infra)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm -r typecheck
+      - run: pnpm -r lint
+      - run: pnpm -r test
+      - run: pnpm --filter @it2pr/infra synth
+
+  python:
+    name: Python (worker + eval)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: [worker, eval]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v3
+        with:
+          python-version: "3.12"
+      - run: uv sync --directory ${{ matrix.project }}
+      - run: uv run --directory ${{ matrix.project }} ruff check .
+      - run: uv run --directory ${{ matrix.project }} pytest -q
