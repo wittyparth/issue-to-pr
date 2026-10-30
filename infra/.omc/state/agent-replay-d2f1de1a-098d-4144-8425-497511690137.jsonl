@@ -1,0 +1,9 @@
+{"t":0,"agent":"af4d06a","agent_type":"git-master","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"af4d06a","agent_type":"git-master","event":"agent_stop","success":true,"duration_ms":98917}
+{"t":0,"agent":"ae27ef2","agent_type":"executor","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"ac85c8e","agent_type":"executor","event":"agent_stop","success":true,"duration_ms":6546}
+{"t":0,"agent":"ae27ef2","agent_type":"executor","event":"agent_stop","success":true,"duration_ms":398597}
+{"t":0,"agent":"ac81f07","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"ab01a01","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"a974d6b","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}
+{"t":0,"agent":"aabe883","agent_type":"unknown","event":"agent_stop","success":true,"duration_ms":0}

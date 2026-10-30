@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd infra && AWS_PROFILE=parthu CDK_DEFAULT_ACCOUNT=579039993093 CDK_DEFAULT_REGION=ap-south-1 pnpm cdk diff 2>&1 | tail -250\",\"timeout\":180000,\"description\":\"Show CDK diff of stack to be d...",
+  "error": "Exit code 1\n(eval):cd:1: no such file or directory: infra",
+  "timestamp": "2026-08-23T07:46:31.598Z",
+  "retry_count": 2
+}
