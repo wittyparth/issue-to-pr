@@ -30,7 +30,7 @@ htmlcov/
 .vscode/
 
 # OMC operational state (keep specs/plans/skills)
-.omc/state/
-.omc/logs/
-.omc/artifacts/
-.omc/handoffs/
+**/.omc/state/
+**/.omc/logs/
+**/.omc/artifacts/
+**/.omc/handoffs/
